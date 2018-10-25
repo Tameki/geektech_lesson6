@@ -14,6 +14,10 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Log.d("ololo", "Receive boot action");
 
+        /**
+         * Так делать не стоит)) Только поиграться
+         * */
+
         Intent activityIntent = new Intent(context, MainActivity.class);
         context.startActivity(activityIntent);
     }
